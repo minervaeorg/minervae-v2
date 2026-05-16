@@ -4,7 +4,7 @@ import EssayEntry from "@/components/EssayEntry";
 
 const essays = [
   {
-    chamber: "THE LIBRARY",
+    chamber: "THE ACADEMY",
     title: "The Ruins Will Find You Standing",
     subtitle: "Horace and the conduct of men in uncertain times.",
     date: "First publication",

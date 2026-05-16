@@ -36,11 +36,11 @@ export default function ChamberList() {
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {chambers.map((chamber) => (
         <div key={chamber.name} className="border border-gold/70 p-8 text-center">
-          <div className="mx-auto mb-7 flex h-40 w-40 items-center justify-center">
+          <div className="mx-auto mb-7 flex h-44 w-44 items-center justify-center">
             <img
               src={chamber.image}
               alt={`${chamber.name} crest`}
-              className="max-h-40 max-w-40 object-contain"
+              className="max-h-44 max-w-44 object-contain"
             />
           </div>
           <h3 className="font-monument text-xl tracking-[0.16em] text-ivory">

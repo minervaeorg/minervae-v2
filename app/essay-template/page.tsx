@@ -7,7 +7,7 @@ export default function EssayTemplate() {
       <Header />
       <main className="px-6 py-24">
         <article className="mx-auto max-w-3xl">
-          <div className="font-monument text-xs uppercase tracking-[0.22em] text-gold">THE LIBRARY</div>
+          <div className="font-monument text-xs uppercase tracking-[0.22em] text-gold">THE ACADEMY</div>
           <h1 className="mt-8 text-5xl leading-tight text-navy">
             The Ruins Will Find You Standing
           </h1>
