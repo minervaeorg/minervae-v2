@@ -13,7 +13,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-4">
           <img
-            src="/images/minervae-owl.png"
+            src="/images/minervae-owl-official.png"
             alt="MINERVAE owl emblem"
             className="h-12 w-12 rounded-full object-contain"
           />

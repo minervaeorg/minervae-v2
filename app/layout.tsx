@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MINERVAE",
     description: "A European Review of Western Thought and Public Life",
-    images: ["/images/minervae-owl.png"]
+    images: ["/images/minervae-owl-official.png"]
   }
 };
 

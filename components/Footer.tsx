@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-navy text-ivory border-t border-gold">
       <div className="mx-auto max-w-7xl px-6 py-16 text-center">
         <img
-          src="/images/minervae-owl.png"
+          src="/images/minervae-owl-official.png"
           alt="MINERVAE owl emblem"
           className="mx-auto h-24 w-24 object-contain"
         />
