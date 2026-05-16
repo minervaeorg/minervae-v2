@@ -1,32 +1,32 @@
 const chambers = [
   {
     name: "THE VIGIL",
-    image: "/images/chamber-vigil.png",
+    image: "/images/chamber-vigil.jpg",
     text: "Diagnosis of Europe’s present condition: demographic decline, institutional fatigue, educational weakening, and cultural loss of confidence."
   },
   {
     name: "THE LIGHTHOUSE",
-    image: "/images/chamber-lighthouse.png",
+    image: "/images/chamber-lighthouse.jpg",
     text: "Strategic readings of the present: contemporary interventions that orient judgment without surrendering to reaction."
   },
   {
     name: "THE LIBRARY",
-    image: "/images/chamber-library.png",
+    image: "/images/chamber-library.jpg",
     text: "Recovery of the European and wider Western inheritance: authors, texts, traditions, and neglected continuities."
   },
   {
     name: "THE ACADEMY",
-    image: "/images/chamber-academy.png",
+    image: "/images/chamber-academy.jpg",
     text: "Intellectual formation: conceptual discipline, methods of inquiry, and the habits required for serious judgment."
   },
   {
     name: "THE FORUM",
-    image: "/images/chamber-forum.png",
+    image: "/images/chamber-forum.jpg",
     text: "Institutional and civic questions: public order, political responsibility, sovereignty, law, and competent government."
   },
   {
     name: "THE THEATRE",
-    image: "/images/chamber-theatre.png",
+    image: "/images/chamber-theatre.jpg",
     text: "Arts, letters, symbolism, and the imaginative forms through which civilizations recognize and preserve themselves."
   }
 ];
@@ -40,7 +40,7 @@ export default function ChamberList() {
             <img
               src={chamber.image}
               alt={`${chamber.name} crest`}
-              className="h-40 w-40 object-contain"
+              className="max-h-44 max-w-44 object-contain"
             />
           </div>
           <h3 className="font-monument text-xl tracking-[0.16em] text-ivory">

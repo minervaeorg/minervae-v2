@@ -20,9 +20,9 @@ export default function Home() {
         <section className="monument-bg px-6 py-28 text-center md:py-36">
           <div className="mx-auto max-w-5xl">
             <img
-              src="/images/minervae-owl.png"
+              src="/images/minervae-owl.jpg"
               alt="MINERVAE owl emblem"
-              className="mx-auto mb-10 h-32 w-32 object-contain"
+              className="mx-auto mb-10 h-32 w-32 rounded-full border border-gold object-cover"
             />
             <h1 className="font-monument text-6xl tracking-[0.18em] text-navy md:text-8xl">
               MINERVAE
