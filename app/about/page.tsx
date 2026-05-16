@@ -10,13 +10,16 @@ export default function About() {
           <h1 className="font-monument text-5xl tracking-[0.16em] text-navy">ABOUT MINERVAE</h1>
           <div className="mt-12 space-y-8 text-2xl leading-[1.75] text-navy/90">
             <p>
-              MINERVAE is an English-language European intellectual review dedicated to the restoration of intellectual seriousness, institutional competence, and civilizational confidence in Western public life.
+              MINERVAE is an English-language European intellectual review devoted to Western thought, public life, and the intellectual preparation required by an age of institutional exhaustion.
             </p>
             <p>
-              Published digitally and conceived as a permanent editorial archive, the review exists to provide a stable home for long-form reflection beyond the rhythms of contemporary commentary.
+              The review is conceived as an impersonal editorial institution. It does not exist as a personal brand, a news commentary page, or a political agitation vehicle. Its task is slower: to form readers capable of judgment, continuity, and seriousness.
             </p>
             <p>
-              The review favors continuity over novelty, depth over visibility, and formation over agitation. It is designed as a cumulative body of thought intended to remain legible over time.
+              MINERVAE proceeds from the conviction that Europe and the wider West cannot be understood apart from their inheritance. That inheritance must be studied, transmitted, criticized where necessary, and defended from the erosion produced by distraction, administrative fatigue, and cultural amnesia.
+            </p>
+            <p>
+              Its work is organized through six permanent editorial chambers: The Vigil, The Lighthouse, The Library, The Academy, The Forum, and The Theatre.
             </p>
           </div>
         </article>

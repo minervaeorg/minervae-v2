@@ -15,7 +15,7 @@ export default function EssayTemplate() {
             Horace and the conduct of men in uncertain times.
           </p>
           <div className="mt-8 text-sm uppercase tracking-[0.18em] text-navy/50">
-            MINERVAE · Editorial Essay · 2026
+            MINERVAE · Editorial Essay · First publication
           </div>
           <div className="mt-14 space-y-8 text-2xl leading-[1.75] text-ink">
             <p>
@@ -25,7 +25,7 @@ export default function EssayTemplate() {
               The purpose of the essay page is not visual performance. It is sustained attention. Margins should be wide, typography generous, and distractions minimal.
             </p>
             <p>
-              Substack may remain the publication engine while this page serves as the canonical visual reference for future long-form presentation.
+              Substack remains the publication engine while this page serves as the canonical visual reference for future long-form presentation.
             </p>
           </div>
         </article>

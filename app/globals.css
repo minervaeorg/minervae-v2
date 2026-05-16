@@ -29,5 +29,14 @@ body {
 .gold-rule {
   height: 1px;
   background: var(--gold);
-  opacity: .75;
+  opacity: .72;
+}
+
+.monument-bg {
+  background:
+    linear-gradient(rgba(244,240,230,.92), rgba(244,240,230,.92)),
+    url('/images/minervae-horizontal.png');
+  background-position: center;
+  background-size: 980px auto;
+  background-repeat: no-repeat;
 }
