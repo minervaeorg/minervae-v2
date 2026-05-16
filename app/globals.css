@@ -32,11 +32,12 @@ body {
   opacity: .72;
 }
 
+/*
+  Hero correction:
+  The horizontal MINERVAE image was removed from the background because it
+  interfered with the live masthead. The hero must be text-led, with the owl
+  emblem above the title only.
+*/
 .monument-bg {
-  background:
-    linear-gradient(rgba(244,240,230,.92), rgba(244,240,230,.92)),
-    url('/images/minervae-horizontal.png');
-  background-position: center;
-  background-size: 980px auto;
-  background-repeat: no-repeat;
+  background: var(--ivory);
 }
