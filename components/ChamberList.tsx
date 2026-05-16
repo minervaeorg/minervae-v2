@@ -40,7 +40,7 @@ export default function ChamberList() {
             <img
               src={chamber.image}
               alt={`${chamber.name} crest`}
-              className="max-h-44 max-w-44 object-contain"
+              className="h-40 w-40 object-contain"
             />
           </div>
           <h3 className="font-monument text-xl tracking-[0.16em] text-ivory">
