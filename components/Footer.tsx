@@ -3,9 +3,9 @@ export default function Footer() {
     <footer className="bg-navy text-ivory border-t border-gold">
       <div className="mx-auto max-w-7xl px-6 py-16 text-center">
         <img
-          src="/images/minervae-owl.jpg"
+          src="/images/minervae-owl.png"
           alt="MINERVAE owl emblem"
-          className="mx-auto h-24 w-24 rounded-full border border-gold object-cover"
+          className="mx-auto h-24 w-24 object-contain"
         />
         <div className="mt-8 font-monument text-3xl tracking-[0.22em]">MINERVAE</div>
         <div className="mt-4 text-sm uppercase tracking-[0.18em] text-gold">
