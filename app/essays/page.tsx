@@ -4,6 +4,13 @@ import EssayEntry from "@/components/EssayEntry";
 
 const essays = [
   {
+    chamber: "THE VIGIL",
+    title: "Why The Right Keeps Losing, Even When It Wins",
+    subtitle: "What Pyrrhus of Epirus can teach us about modern politics",
+    date: "12 August 2026",
+    href: "https://minervaeorg.substack.com/p/why-the-right-keeps-losing-even-when"
+  },
+  {
     chamber: "THE THEATRE",
     title: "The Ship of Odysseus",
     subtitle: "How much can a story lose before it becomes anew?",
@@ -32,7 +39,7 @@ const essays = [
     href: "https://minervaeorg.substack.com/p/the-last-conversation-before-dawn"
   },
   {
-    chamber: "THE ACADEMY",
+    chamber: "THE FORUM",
     title: "The Digital Caesar",
     subtitle: "All Networks lead to Rome",
     date: "3 June 2026",
