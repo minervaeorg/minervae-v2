@@ -12,7 +12,7 @@ export default function Chambers() {
             THE EDITORIAL CHAMBERS
           </h1>
           <p className="mx-auto mt-10 max-w-3xl text-center text-2xl leading-10 text-ivory/80">
-            MINERVAE is organized through six permanent departments, each dedicated to a distinct field of civilizational inquiry.
+            The work of MINERVAE is organized through six permanent editorial chambers, each with a distinct purpose within the review.
           </p>
           <div className="mt-20">
             <ChamberList />
