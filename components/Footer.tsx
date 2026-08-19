@@ -12,7 +12,7 @@ export default function Footer() {
           A European Review of Western Thought and Public Life
         </div>
         <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-ivory/80">
-          Conceived as an institutional house for serious essays on civilizational continuity, public order, intellectual formation, and the Western inheritance.
+          Essays on the Western inheritance and the questions confronting its future.
         </p>
         <div className="mt-10 text-sm tracking-[0.12em] text-ivory/60">
           © MINERVAE. All rights reserved.
