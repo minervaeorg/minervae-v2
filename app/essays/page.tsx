@@ -4,11 +4,60 @@ import EssayEntry from "@/components/EssayEntry";
 
 const essays = [
   {
+    chamber: "THE THEATRE",
+    title: "The Ship of Odysseus",
+    subtitle: "How much can a story lose before it becomes anew?",
+    date: "19 July 2026",
+    href: "https://minervaeorg.substack.com/p/the-ship-of-odysseus"
+  },
+  {
+    chamber: "THE LIBRARY",
+    title: "Lives Worth Knowing",
+    subtitle: '"For it is not Histories that I am writing, but Lives"',
+    date: "13 July 2026",
+    href: "https://minervaeorg.substack.com/p/lives-worth-knowing"
+  },
+  {
+    chamber: "THE THEATRE",
+    title: "The Stories We Tell",
+    subtitle: "O Muses, O high genius, give me help",
+    date: "29 June 2026",
+    href: "https://minervaeorg.substack.com/p/the-stories-we-tell"
+  },
+  {
+    chamber: "THE LIBRARY",
+    title: "The Last Conversation Before Dawn",
+    subtitle: "On Reading Plato's Crito",
+    date: "12 June 2026",
+    href: "https://minervaeorg.substack.com/p/the-last-conversation-before-dawn"
+  },
+  {
     chamber: "THE ACADEMY",
+    title: "The Digital Caesar",
+    subtitle: "All Networks lead to Rome",
+    date: "3 June 2026",
+    href: "https://minervaeorg.substack.com/p/the-digital-caesar"
+  },
+  {
+    chamber: "THE LIGHTHOUSE",
+    title: "Politics at the Speed of Now",
+    subtitle: "The New Rhythm of Power",
+    date: "26 May 2026",
+    href: "https://minervaeorg.substack.com/p/politics-at-the-speed-of-now"
+  },
+  {
+    chamber: "THE VIGIL",
+    title: "The Age of Maintenance",
+    subtitle: "On aging societies and the politics of preservation",
+    date: "19 May 2026",
+    href: "https://minervaeorg.substack.com/p/the-age-of-maintenance"
+  },
+  {
+    chamber: "THE LIBRARY",
     title: "The Ruins Will Find You Standing",
-    subtitle: "Horace and the conduct of men in uncertain times.",
-    date: "First publication",
-    href: "https://minervaeorg.substack.com/"
+    subtitle: "Horace and the Conduct of Men in Uncertain Times",
+    date: "12 May 2026",
+    href: "https://minervaeorg.substack.com/p/the-ruins-will-find-you-standing"
   }
 ];
 
