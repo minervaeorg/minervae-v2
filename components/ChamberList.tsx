@@ -1,33 +1,33 @@
 const chambers = [
   {
     name: "THE VIGIL",
-    image: "/images/chamber-vigil.png",
-    text: "Diagnosis of Europe’s present condition: demographic decline, institutional fatigue, educational weakening, and cultural loss of confidence."
+    image: "/images/chamber-vigil.jpg",
+    text: "The diagnosis of the West’s present condition, examining the demographic, institutional, educational, and cultural forces shaping its decline and transformation."
   },
   {
     name: "THE LIGHTHOUSE",
-    image: "/images/chamber-lighthouse.png",
-    text: "Strategic readings of the present: contemporary interventions that orient judgment without surrendering to reaction."
+    image: "/images/chamber-lighthouse.jpg",
+    text: "Strategic and prescriptive essays concerned with the direction of the West’s renewal."
   },
   {
     name: "THE LIBRARY",
-    image: "/images/chamber-library.png",
-    text: "Recovery of the European and wider Western inheritance: authors, texts, traditions, and neglected continuities."
+    image: "/images/chamber-library.jpg",
+    text: "The recovery of the Western inheritance through its authors, texts and traditions."
   },
   {
     name: "THE ACADEMY",
-    image: "/images/chamber-academy.png",
-    text: "Intellectual formation: conceptual discipline, methods of inquiry, and the habits required for serious judgment."
+    image: "/images/chamber-academy.jpg",
+    text: "Intellectual formation through reading, self-education, disciplined inquiry, and the cultivation of serious thought."
   },
   {
     name: "THE FORUM",
-    image: "/images/chamber-forum.png",
-    text: "Institutional and civic questions: public order, political responsibility, sovereignty, law, and competent government."
+    image: "/images/chamber-forum.jpg",
+    text: "The examination of institutions and public order: law, government, civic life, public systems, and the structures through which societies govern themselves."
   },
   {
     name: "THE THEATRE",
-    image: "/images/chamber-theatre.png",
-    text: "Arts, letters, symbolism, and the imaginative forms through which civilizations recognize and preserve themselves."
+    image: "/images/chamber-theatre.jpg",
+    text: "Culture, arts, letters and the imaginative forms through which we understand and represent ourselves."
   }
 ];
 
@@ -36,13 +36,11 @@ export default function ChamberList() {
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {chambers.map((chamber) => (
         <div key={chamber.name} className="border border-gold/70 p-8 text-center">
-          <div className="mx-auto mb-7 flex h-44 w-44 items-center justify-center">
-            <img
-              src={chamber.image}
-              alt={`${chamber.name} crest`}
-              className="block max-h-44 max-w-44 object-contain"
-            />
-          </div>
+          <img
+            src={chamber.image}
+            alt={`${chamber.name} crest`}
+            className="mx-auto mb-7 h-32 w-32 rounded-full object-cover"
+          />
           <h3 className="font-monument text-xl tracking-[0.16em] text-ivory">
             {chamber.name}
           </h3>
