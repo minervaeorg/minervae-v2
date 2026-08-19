@@ -5,11 +5,11 @@ import EssayEntry from "@/components/EssayEntry";
 import Link from "next/link";
 
 const firstEssay = {
-  chamber: "THE ACADEMY",
-  title: "The Ruins Will Find You Standing",
-  subtitle: "Horace and the conduct of men in uncertain times.",
-  date: "First publication",
-  href: "https://minervaeorg.substack.com/"
+  chamber: "THE VIGIL",
+  title: "Why The Right Keeps Losing, Even When It Wins",
+  subtitle: "What Pyrrhus of Epirus can teach us about modern politics.",
+  date: "12 August 2026",
+  href: "https://minervaeorg.substack.com/p/why-the-right-keeps-losing-even-when"
 };
 
 export default function Home() {
@@ -68,9 +68,6 @@ export default function Home() {
             <h2 className="text-center font-monument text-4xl tracking-[0.18em] text-navy">
               CURRENT ESSAY
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-center text-xl leading-8 text-navy/75">
-              The public archive will grow through the review’s Substack publications. For now, the first essay stands as the opening text of MINERVAE.
-            </p>
             <div className="mt-12">
               <EssayEntry {...firstEssay} />
             </div>
