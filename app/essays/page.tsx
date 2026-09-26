@@ -4,9 +4,30 @@ import EssayEntry from "@/components/EssayEntry";
 
 const essays = [
   {
+    chamber: "THE ACADEMY",
+    title: "In Search of Caesar",
+    subtitle: "On the Formation of Elites and the Exercise of Responsibility",
+    date: "23 September 2026",
+    href: "https://minervaeorg.substack.com/p/in-search-of-caesar"
+  },
+  {
+    chamber: "THE LIGHTHOUSE",
+    title: "A World They Never Knew",
+    subtitle: "Why a Generation Raised After the Borders Opened Wants to Close Them",
+    date: "23 September 2026",
+    href: "https://minervaeorg.substack.com/p/a-world-they-never-knew"
+  },
+  {
+    chamber: "THE FORUM",
+    title: "There Is No Elephant in the Room",
+    subtitle: "How Moderation Drives Political Grievances to the Extremes",
+    date: "31 August 2026",
+    href: "https://minervaeorg.substack.com/p/there-is-no-elephant-in-the-room"
+  },
+  {
     chamber: "THE VIGIL",
     title: "Why The Right Keeps Losing, Even When It Wins",
-    subtitle: "What Pyrrhus of Epirus can teach us about modern politics",
+    subtitle: "What Pyrrhus of Epirus can teach us about modern politics.",
     date: "12 August 2026",
     href: "https://minervaeorg.substack.com/p/why-the-right-keeps-losing-even-when"
   },
