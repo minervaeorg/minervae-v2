@@ -14,7 +14,7 @@ const essays = [
     chamber: "THE LIGHTHOUSE",
     title: "A World They Never Knew",
     subtitle: "Why a Generation Raised After the Borders Opened Wants to Close Them",
-    date: "23 September 2026",
+    date: "17 September 2026",
     href: "https://minervaeorg.substack.com/p/a-world-they-never-knew"
   },
   {
