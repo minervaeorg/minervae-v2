@@ -5,11 +5,11 @@ import EssayEntry from "@/components/EssayEntry";
 import Link from "next/link";
 
 const firstEssay = {
-  chamber: "THE VIGIL",
-  title: "Why The Right Keeps Losing, Even When It Wins",
-  subtitle: "What Pyrrhus of Epirus can teach us about modern politics.",
-  date: "12 August 2026",
-  href: "https://minervaeorg.substack.com/p/why-the-right-keeps-losing-even-when"
+  chamber: "THE THEATRE",
+  title: "I Ain’t Reading All That",
+  subtitle: "I’m happy for u or sorry that happened",
+  date: "13 October 2026",
+  href: "https://minervaeorg.substack.com/p/i-aint-reading-all-that"
 };
 
 export default function Home() {
