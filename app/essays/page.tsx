@@ -92,7 +92,7 @@ const essays = [
     href: "https://minervaeorg.substack.com/p/the-age-of-maintenance"
   },
   {
-    chamber: "THE LIBRARY",
+    chamber: "THE ACADEMY",
     title: "The Ruins Will Find You Standing",
     subtitle: "Horace and the Conduct of Men in Uncertain Times",
     date: "12 May 2026",
