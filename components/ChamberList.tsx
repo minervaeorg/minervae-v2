@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const chambers = [
   {
     name: "THE VIGIL",
@@ -35,7 +37,12 @@ export default function ChamberList() {
   return (
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {chambers.map((chamber) => (
-        <div key={chamber.name} className="border border-gold/70 p-8 text-center">
+        <Link
+          key={chamber.name}
+          href={`/essays?chamber=${chamber.name.toLowerCase().replace(/\s+/g, "-")}`}
+          aria-label={`Explore essays in ${chamber.name}`}
+          className="block border border-gold/70 p-8 text-center transition-colors hover:bg-ivory/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+        >
           <img
             src={chamber.image}
             alt={`${chamber.name} crest`}
@@ -47,7 +54,7 @@ export default function ChamberList() {
           <p className="mt-5 text-lg leading-8 text-ivory/78">
             {chamber.text}
           </p>
-        </div>
+        </Link>
       ))}
     </div>
   );
