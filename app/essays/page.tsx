@@ -1,8 +1,19 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import EssayEntry from "@/components/EssayEntry";
 
 const essays = [
+  {
+    chamber: "THE THEATRE",
+    title: "I Ain’t Reading All That",
+    subtitle: "I’m happy for u or sorry that happened",
+    date: "13 October 2026",
+    href: "https://minervaeorg.substack.com/p/i-aint-reading-all-that"
+  },
   {
     chamber: "THE ACADEMY",
     title: "In Search of Caesar",
@@ -89,20 +100,58 @@ const essays = [
   }
 ];
 
+const chamberFilters = [
+  { name: "THE VIGIL", slug: "the-vigil" },
+  { name: "THE LIBRARY", slug: "the-library" },
+  { name: "THE ACADEMY", slug: "the-academy" },
+  { name: "THE FORUM", slug: "the-forum" },
+  { name: "THE LIGHTHOUSE", slug: "the-lighthouse" },
+  { name: "THE THEATRE", slug: "the-theatre" }
+];
+
 export default function Essays() {
+  const [selectedChamber, setSelectedChamber] = useState<string | null>(null);
+
+  useEffect(() => {
+    const syncChamber = () => {
+      const requested = new URLSearchParams(window.location.search).get("chamber");
+      setSelectedChamber(chamberFilters.some((item) => item.slug === requested) ? requested : null);
+    };
+    syncChamber();
+    window.addEventListener("popstate", syncChamber);
+    return () => window.removeEventListener("popstate", syncChamber);
+  }, []);
+
+  const activeChamber = chamberFilters.find((item) => item.slug === selectedChamber);
+  const visibleEssays = activeChamber
+    ? essays.filter((essay) => essay.chamber === activeChamber.name)
+    : essays;
+
   return (
     <>
       <Header />
       <main className="px-6 py-24">
         <section className="mx-auto max-w-5xl">
           <h1 className="text-center font-monument text-5xl tracking-[0.16em] text-navy">
-            ESSAYS
+            {activeChamber ? activeChamber.name : "ESSAYS"}
           </h1>
           <p className="mx-auto mt-10 max-w-3xl text-center text-2xl leading-10 text-navy/80">
-            The public archive of MINERVAE. Essays are published through Substack and indexed here as the permanent record of the review grows.
+            {activeChamber
+              ? `Essays published under ${activeChamber.name}.`
+              : "The public archive of MINERVAE. Essays are published through Substack and indexed here as the permanent record of the review grows."}
           </p>
+          <nav aria-label="Filter essays by chamber" className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-3 text-center">
+            <Link href="/essays" onClick={() => setSelectedChamber(null)} aria-current={!activeChamber ? "page" : undefined} className={`text-sm tracking-[0.1em] hover:underline ${!activeChamber ? "text-navy underline" : "text-navy/65"}`}>
+              ALL ESSAYS
+            </Link>
+            {chamberFilters.map((item) => (
+              <Link key={item.slug} href={`/essays?chamber=${item.slug}`} onClick={() => setSelectedChamber(item.slug)} aria-current={selectedChamber === item.slug ? "page" : undefined} className={`text-sm tracking-[0.1em] hover:underline ${selectedChamber === item.slug ? "text-navy underline" : "text-navy/65"}`}>
+                {item.name}
+              </Link>
+            ))}
+          </nav>
           <div className="mt-16 space-y-10">
-            {essays.map((essay) => (
+            {visibleEssays.map((essay) => (
               <EssayEntry key={essay.title} {...essay} />
             ))}
           </div>
